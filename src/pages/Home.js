@@ -2,13 +2,11 @@ import { Link } from 'react-router-dom'
 
 // 컴포넌트
 import Profile from '../components/Profile';
+import AppBarToHome from '../components/AppBarToHome';
 
 // mui컴포넌트
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
 import { Grid } from '@mui/material';
 
 
@@ -18,13 +16,14 @@ function Home() {
         <>
             <Container maxWidth="sm" >
                 {/* 상단바 */}
-                <AppBar>
+                <AppBarToHome />
+                {/* <AppBar>
                     <Toolbar>
                         <Typography variant="h6" component="div">
                             과제제출
                         </Typography>
                     </Toolbar>
-                </AppBar>
+                </AppBar> */}
                 {/* 프로필 자리 */}
                 <Profile />
 
