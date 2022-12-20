@@ -1,7 +1,10 @@
+// 컴포넌트
+import BottomNavBar from "../components/BottomNavBar";
+
 function Task1() {
     return (
         <>
-            <p>여기는 Task1</p>
+            <BottomNavBar />
         </>
     );
 }

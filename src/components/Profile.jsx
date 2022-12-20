@@ -1,7 +1,6 @@
-// mui 컴포넌트
 import React from "react";
 
-// mui
+// mui 컴포넌트
 import { Grid, Typography, Box } from "@mui/material";
 import Avatar from '@mui/material/Avatar';
 import Tooltip from '@mui/material/Tooltip';
@@ -21,7 +20,7 @@ function Profile() {
 
                 {/* 프로필이미지 자리 */}
                 <Grid item xs={12}>
-                    <Tooltip title="안녕하세요! 2022 구로 청년이룸 온라인 채용박람회 면접 참여자 임새롬입니다!" followCursor>
+                    <Tooltip title="안녕하세요! 2022구로청년이룸온라인채용박람회 면접참여자 임새롬입니다!" followCursor>
                         <Box >
                             <Avatar
                                 alt="Remy Sharp"
