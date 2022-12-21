@@ -12,7 +12,7 @@ function AppBarToHome() {
             <Link to="/" style={{ textDecoration: "none" }}>
                 <AppBar>
                     <Toolbar>
-                        <Typography variant="h6" component="div">
+                        <Typography variant="h6" component="div" >
                             과제제출
                         </Typography>
                     </Toolbar>

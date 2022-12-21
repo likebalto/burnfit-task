@@ -15,41 +15,43 @@ function Home() {
     return (
         <>
             <Container maxWidth="sm" >
-                {/* 상단바 */}
+                {/* 상단바 자리*/}
                 <AppBarToHome />
-                {/* <AppBar>
-                    <Toolbar>
-                        <Typography variant="h6" component="div">
-                            과제제출
-                        </Typography>
-                    </Toolbar>
-                </AppBar> */}
-                {/* 프로필 자리 */}
-                <Profile />
 
-                {/* 과제버튼 자리 */}
                 <Grid container
-                    direction="row"
-                    alignItems="center"
-                    sx={{ mt: 2 }}>
+                    direnction="column"
+                    alignItems="center">
 
-                    <Grid item xs={2}>
-                        <Link to="./Task1" style={{ textDecoration: "none" }}>
-                            <Button variant="contained">Task1</Button>
-                        </Link>
+                    {/* 프로필 자리 */}
+                    <Grid item xs={12}
+                    ><Profile />
                     </Grid>
-                    <Grid item xs={2}>
-                        <Link to="./Task2" style={{ textDecoration: "none" }}>
-                            <Button variant="contained">Task2</Button>
-                        </Link>
-                    </Grid>
-                    <Grid item xs={2}>
-                        <Link to="./Task3" style={{ textDecoration: "none" }}>
-                            <Button variant="contained">Task3</Button>
-                        </Link>
+
+
+                    {/* 과제버튼 자리 */}
+                    <Grid container
+                        direction="row"
+                        justifyContent="space-evenly"
+                        alignItems="flex-start"
+                        sx={{ mt: 3 }}>
+
+                        <Grid item xs={3}>
+                            <Link to="./Task1" style={{ textDecoration: "none" }}>
+                                <Button variant="contained">과제 : Level1</Button>
+                            </Link>
+                        </Grid>
+                        <Grid item xs={3}>
+                            <Link to="./Task2" style={{ textDecoration: "none" }}>
+                                <Button variant="contained">과제 : Level2</Button>
+                            </Link>
+                        </Grid>
+                        <Grid item xs={3}>
+                            <Link to="./Task3" style={{ textDecoration: "none" }}>
+                                <Button variant="contained">과제 : Level3</Button>
+                            </Link>
+                        </Grid>
                     </Grid>
                 </Grid>
-
             </Container>
         </>
     );
