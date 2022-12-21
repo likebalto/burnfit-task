@@ -70,7 +70,7 @@ function BottomNavBar() {
     return (
         <>
 
-            <Box sx={{ width: 500 }} >
+            <Box maxWidth="sm" >
                 <BottomNavigation sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={3} showLabels value={value}
                     onChange={handleChange}>
                     <BottomNavigationAction label="HOME" icon={<HomeRoundedIcon />} {...a11yProps(0)} />
@@ -86,11 +86,11 @@ function BottomNavBar() {
                     justifyContent="center"
                     alignItems="center"
                     direction="column">
-                    <Grid item sx={12}>
+                    <Grid item sx={{ mt: 5 }} xs={12}>
                         <p>메인</p>
                     </Grid>
-                    <Grid item sx={12}>
-                        <img src={mainImg} alt="메인이미지" width="480px" />
+                    <Grid item xs={12}>
+                        <img src={mainImg} alt="메인이미지" width="100%" />
                     </Grid>
                 </Grid>
             </TabPanel>
@@ -100,11 +100,11 @@ function BottomNavBar() {
                     justifyContent="center"
                     alignItems="center"
                     direction="column">
-                    <Grid item sx={12}>
+                    <Grid item sx={{ mt: 5 }} xs={12}>
                         <p>캘린더</p>
                     </Grid>
-                    <Grid item sx={12}>
-                        <img src={calImg} alt="캘린더이미지" width="480px" />
+                    <Grid item xs={12}>
+                        <img src={calImg} alt="캘린더이미지" width="100%" />
                     </Grid>
                 </Grid>
             </TabPanel>
@@ -114,11 +114,11 @@ function BottomNavBar() {
                     justifyContent="center"
                     alignItems="center"
                     direction="column">
-                    <Grid item sx={12}>
+                    <Grid item sx={{ mt: 5 }} xs={12}>
                         <p>라이브러리</p>
                     </Grid>
-                    <Grid item sx={12}>
-                        <img src={libImg} alt="라이브러리이미지" width="480px" />
+                    <Grid item xs={12}>
+                        <img src={libImg} alt="라이브러리이미지" width="100%" />
                     </Grid>
                 </Grid>
             </TabPanel>
@@ -128,11 +128,11 @@ function BottomNavBar() {
                     justifyContent="center"
                     alignItems="center"
                     direction="column">
-                    <Grid item sx={12}>
+                    <Grid item sx={{ mt: 5 }} xs={12}>
                         <p>마이페이지</p>
                     </Grid>
-                    <Grid item sx={12}>
-                        <img src={mypageImg} alt="마이페이지이미지" width="480px" />
+                    <Grid item xs={12}>
+                        <img src={mypageImg} alt="마이페이지이미지" width="100%" />
                     </Grid>
                 </Grid>
             </TabPanel>

@@ -1,9 +1,12 @@
+import { Link } from 'react-router-dom'
+
 // 컴포넌트
 import AppBarToHome from '../components/AppBarToHome';
 
 
 // mui컴포넌트
 import Container from '@mui/material/Container';
+import { Grid } from '@mui/material';
 
 // ToDO : 
 // - Level 2 : 캘린더 탭에 외부 캘린더 라이브러리를 이용하지 않고 캘린더 컴포넌트를 제작하시오. 캘린더는 아래 이미지와 같은 형태로 월 캘린더로 구현하시오
@@ -18,6 +21,18 @@ function Task2() {
             <Container maxWidth="sm" >
 
                 <AppBarToHome />
+
+                <Grid container
+                    direnction="column"
+                    alignItems="center"
+                    sx={{ mt: 20 }}>
+
+                    {/* 캘린더자리 */}
+                    <Grid item xs={12}>
+                        <p>캘린더</p>
+                    </Grid>
+                </Grid>
+
 
             </Container>
 
